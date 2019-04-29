@@ -2,14 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/categroy/categroy",
     "pages/car/car",
-    "pages/myInfo/myInfo"
+    "pages/my/my",
+    "pages/category/category",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "糖果",
+    "navigationBarTitleText": "倔强的糖果",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
@@ -19,24 +20,33 @@
     }
   },
   "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
-    "borderStyle": "white",
+    "color": "#7b8196",
+    "selectedColor": "#1e82d2",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "image/tabbar/home-off1.png",
+        "selectedIconPath": "image/tabbar/home-on1.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/categroy/categroy",
-        "text": "分类"
+        "pagePath": "pages/order/order",
+        "iconPath": "image/tabbar/menu-off1.png",
+        "selectedIconPath": "image/tabbar/menu-on1.png",
+        "text": "订单"
       },
       {
         "pagePath": "pages/car/car",
+        "iconPath": "image/tabbar/cart-off1.png",
+        "selectedIconPath": "image/tabbar/cart-on1.png",
         "text": "购物车"
       },
       {
-        "pagePath": "pages/myInfo/myInfo",
+        "pagePath": "pages/my/my",
+        "iconPath": "image/tabbar/my-off1.png",
+        "selectedIconPath": "image/tabbar/my-on1.png",
         "text": "个人"
       }
     ]

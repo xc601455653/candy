@@ -4,102 +4,14 @@ const app = getApp()
 
 Page({
   data: {
-    imageURL: '//img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg',
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    controls: [{
-      id: 1,
-  
-      position: {
-        left: 320,
-        top: 100 - 50,
-        width: 20,
-        height: 20
-      },
-      clickable: true
-    },
-    {
-      id: 2,
-    
-      position: {
-        left: 340,
-        top: 100 - 50,
-        width: 20,
-        height: 20
-      },
-      clickable: true
-    }
-    ]
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
-    })
-  },
-  location: function(){
-    var that = this;
-    wx.chooseLocation({
-      success: function (res) {
-        that.setData({
-          latitude: res.latitude,
-          longitude: res.longitude,
-          address_name: res.name
-        })
-        console.log(that.data.address_name)
-        app.globalData.latitude = res.latitude;
-        app.globalData.longitude = res.longitude;
-      },
-      fail: function (err) {
-
-      }
-    });
-    return;
-    wx.getLocation({
-      type: 'wgs84',
-      success: res =>{
-        var latitude = res.latitude
-        var longitude = res.longitude
-        var speed = res.speed
-        var accuracy = res.accuracy
-          this.setData({
-            latitude: res.latitude,
-            longitude: res.longitude,
-            markers: [{
-              id: "1",
-              latitude: res.latitude,
-              longitude: res.longitude,
-              width: 50,
-              height: 50,
-              title: "哪里"
-
-            }],
-            circles: [{
-              latitude: res.latitude,
-              longitude: res.longitude,
-              color: '#FF0000DD',
-              fillColor: '#7cb5ec88',
-              radius: 3000,
-              strokeWidth: 1
-            }]
-      });
-      }
-    });
-  },
-  //点击merkers
-  markertap(e) {
-    console.log(e.markerId)
-
-    wx.showActionSheet({
-      itemList: ["A"],
-      success: function (res) {
-        console.log(res.tapIndex)
-      },
-      fail: function (res) {
-        console.log(res.errMsg)
-      }
     })
   },
   onLoad: function () {

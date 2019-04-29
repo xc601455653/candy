@@ -1,4 +1,4 @@
-// pages/categroy/categroy.js
+// pages/order/order.js
 Page({
 
   /**
