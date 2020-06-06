@@ -1,1 +1,10 @@
 <!--pages/car/car.wxml-->
+<scroll-view>
+    <van-submit-bar
+    price="{{ 3050 }}"
+    button-text="提交订单"
+    bind:submit="onClickButton"
+    custom-class="van-submit-bar"
+    safe-area-inset-bottom="{{ true }}"
+  />
+</scroll-view>

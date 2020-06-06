@@ -2,6 +2,7 @@
   "usingComponents": {
     "i-button":"../../i-dist/button/index",
     "van-card":"../../vant-dist/card/index",
-    "van-search":"../../vant-dist/search/index"
+    "van-search":"../../vant-dist/search/index",
+    "van-panel":"../../vant-dist/panel/index"
   }
 }

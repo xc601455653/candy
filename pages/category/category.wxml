@@ -1,1 +1,56 @@
 <!--pages/category/category.wxml-->
+<view style="margin-top:5px">
+    <van-tabs type="card">
+    <van-tab
+      wx:for="{{ ['默认','价格','热销'] }}"
+      wx:key="index"
+      title="{{ item }}"
+    >
+      <view class="content-2" style="padding-top:5px">
+        <van-card
+          num="2"
+          price="2.00"
+          desc="超级鲜嫩上好的牛排超级鲜嫩上好的牛排超级鲜嫩上好的牛排"
+          title="超级鲜嫩上好的牛排超级鲜嫩上好的牛排超级鲜嫩上好的牛排"
+          thumb="{{ '../../image/temImages/demo.jpg' }}"
+        />
+      </view>
+      <view class="content-2" style="padding-top:5px">
+        <van-card
+          num="2"
+          price="2.00"
+          desc="超级鲜嫩上好的牛排"
+          title="超级鲜嫩上好的牛排"
+          thumb="{{ '../../image/temImages/demo.jpg' }}"
+        />
+      </view>
+      <view class="content-2" style="padding-top:5px">
+        <van-card
+          num="2"
+          price="2.00"
+          desc="超级鲜嫩上好的牛排"
+          title="超级鲜嫩上好的牛排"
+          thumb="{{ '../../image/temImages/demo.jpg' }}"
+        />
+      </view>
+      <view class="content-2" style="padding-top:5px">
+        <van-card
+          num="2"
+          price="2.00"
+          desc="超级鲜嫩上好的牛排"
+          title="超级鲜嫩上好的牛排"
+          thumb="{{ '../../image/temImages/demo.jpg' }}"
+        />
+      </view>
+      <view class="content-2" style="padding-top:5px">
+        <van-card
+          num="2"
+          price="2.00"
+          desc="超级鲜嫩上好的牛排"
+          title="超级鲜嫩上好的牛排"
+          thumb="{{ '../../image/temImages/demo.jpg' }}"
+        />
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

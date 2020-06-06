@@ -1,6 +1,54 @@
 <!--index.wxml-->
 <!-- 首页顶部搜索栏 -->
-<van-search label="搜索" useActionSlot="true" shape="round" showAction="true" placeholder="请输入地址">
-<view slot="action" bind:tap="onSearch">搜索</view>
-</van-search>
- 
+<scroll-view>
+<!-- 头部搜索 -->
+  <view>
+    <van-search label="搜索" useActionSlot="true" shape="round" showAction="true" placeholder="请输入关键字">
+      <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
+  </view>
+  <!-- 轮播图 -->
+  <view style="width:100%">
+    <swiper style="height:230px;width:100%"  indicator-dots="{{ true }}" autoplay="{{ true }}">
+      <swiper-item>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="width:100%"></image>
+      </swiper-item>
+      <swiper-item>
+        <image bindtap="" src="../../image/temImages/niu.jpg" style="width:100%"></image>
+      </swiper-item>
+      <swiper-item>
+        <image bindtap="" src="../../image/temImages/niu1.jpg" style="width:100%"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 推荐商品 -->
+  <view>
+    <van-panel title="限时折扣" status="还剩五天">
+      <view  class="content" style="display: flex;justify-content:space-around">
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%;"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+      </view>
+    </van-panel>
+  </view>
+  <!-- 超值买 -->
+  <view>
+    <van-panel  class="content" title="超值买" status="还剩五天">
+      <view style="display: flex;justify-content:space-around">
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+      </view>
+    </van-panel>
+  </view>
+  <!-- 商家推荐 -->
+    <view>
+    <van-panel  class="content" title="商家推荐" status="还剩五天">
+      <view style="display: flex;justify-content:space-around">
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+        <image bindtap="" src="../../image/temImages/demo.jpg" style="height:100px;width:30%"></image>
+      </view>
+    </van-panel>
+  </view>
+</scroll-view>

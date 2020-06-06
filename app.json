@@ -32,16 +32,16 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/category/category",
         "iconPath": "image/tabbar/menu-off1.png",
         "selectedIconPath": "image/tabbar/menu-on1.png",
-        "text": "订单"
+        "text": "分类"
       },
       {
         "pagePath": "pages/car/car",
         "iconPath": "image/tabbar/cart-off1.png",
         "selectedIconPath": "image/tabbar/cart-on1.png",
-        "text": "购物车"
+        "text": "小肉车"
       },
       {
         "pagePath": "pages/my/my",

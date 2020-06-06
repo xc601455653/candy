@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "i-card": "../../i-dist/card/index",
+    "van-cell":"../../vant-dist/cell/index",
+    "van-icon":"../../vant-dist/icon/index",
+    "van-panel": "../../vant-dist/panel/index"
+  }
 }

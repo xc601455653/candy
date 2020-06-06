@@ -1,1 +1,77 @@
 <!--pages/my/my.wxml-->
+<scroll-view page scroll-y>
+  <view wx:if="{{ canIUse }}" class="grid-wrap mb10">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl }}" ></image>
+    <text class="userinfo-nickname">一叽咕</text>
+  </view>
+  <view wx:else class="grid-wrap">
+      <button type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  </view>
+
+<view class="grid-wrap flex-h" style="padding-top:20rpx;padding-bottom:20rpx;">
+    <view  class="flex-1" >
+      <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+      <text class="block fs-12 c-6">余额</text>
+    </view>
+    <view  class="flex-1" >
+      <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+      <text class="block fs-12 c-6">积分</text>
+    </view>
+    <view  class="flex-1" >
+      <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+      <text class="block fs-12 c-6">会员卡</text>
+    </view>
+    <view  class="flex-1" >
+      <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+      <text class="block fs-12 c-6">优惠券</text>
+    </view>
+    </view>
+
+  <view class="mg10" style="border-radius: 14rpx;overflow:hidden;">
+    <van-panel>
+      <view slot="header">
+        <van-cell 
+          title="我的订单"
+          value="查看全部订单"
+          custom-class="header-class"
+          value-class="van-panel__header-value"
+          icon="balance-list"
+          is-link
+        />
+      </view>
+      <view class="grid-wrap flex-h" style="padding-bottom:20rpx;">
+        <view  class="flex-1" >
+          <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+          <text class="block fs-12 c-6">待发货</text>
+        </view>
+        <view  class="flex-1" >
+          <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+          <text class="block fs-12 c-6">待付款</text>
+        </view>
+        <view  class="flex-1" >
+          <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+          <text class="block fs-12 c-6">待评价</text>
+        </view>
+        <view  class="flex-1" >
+          <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+          <text class="block fs-12 c-6">已过期</text>
+        </view>
+          <view  class="flex-1" >
+          <image src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="width:70rpx;height:70rpx;"></image>
+          <text class="block fs-12 c-6">退款/售后</text>
+        </view>
+      </view>
+    </van-panel>
+  </view>
+    
+
+
+<view  class="grid-wrap mg10" style="text-align:left;">
+  <van-cell title="购物车" icon="location-o" is-link />
+  <van-cell title="任务中心" icon="shop-o" is-link />
+  <van-cell title="返现" icon="chat-o" is-link />
+  <van-cell title="赠品" icon="friends-o" is-link />
+  <van-cell title="收货地址" icon="like" is-link />
+  <van-cell title="个人设置" icon="gift-o" is-link />
+</view>
+</scroll-view>
